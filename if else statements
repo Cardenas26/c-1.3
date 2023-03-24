@@ -1,0 +1,19 @@
+bool isMale = true;
+bool isTall =false;
+
+if (isMale && isTall) { 
+    Console.WriteLine("You are a Tall Male");
+} else if (isMale && !isTall)
+{
+    Console.WriteLine("You are not a tall male");
+
+}
+else if (isTall && !isMale)
+{
+    Console.WriteLine("You are a tall Female");
+}
+else
+{
+   Console.WriteLine("you are Short & or Female");
+
+}
