@@ -5,3 +5,16 @@ while(index <=5)
     index++;
 }
 Console.ReadLine(); 
+
+
+
+string secretWord = "Gorilla";
+string guess = "";
+
+while (guess != secretWord)
+{
+    Console.Write("Enter guess: ");
+    guess = Console.ReadLine();
+}
+Console.Write("You win!");
+Console.ReadLine();
