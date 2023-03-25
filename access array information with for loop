@@ -1,0 +1,5 @@
+int[] luckyNum = { 26, 93, 22, 15 };
+for (int i = 0; i < luckyNum.Length; i++)
+{
+    Console.WriteLine(luckyNum[i]);
+}
