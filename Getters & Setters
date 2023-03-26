@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Rhino
+{
+    class Movie
+    {
+        public string title;
+        public string director;
+        private string rating;
+
+        public Movie (string aTitle, string aDirector, string aRating)
+        {
+            title = aTitle;
+            director = aDirector;
+            Rating = aRating;
+        }
+
+        public string Rating
+        {
+            get { return rating; }
+            set
+            {
+                if (value == "PG" || value == "PG-13" || value == "R" || value == "NR")
+                {
+                    rating = value;
+                }
+                else
+                {
+                    rating = "NR";
+                }
+            }
+        }
+        
+    }
+}
+
+
+using Rhino;
+{
+    Movie toystory = new Movie(" Toy Story", "Mike W.", "PG");
+    Movie mario = new Movie("Mario", "Ella V.", "PG-13");
+
+
+
+    Console.WriteLine(toystory.Rating);
+
+
+
+
+    Console.ReadLine();
+}
+
+
+
+
+
+
+
