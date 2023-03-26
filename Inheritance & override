@@ -1,0 +1,79 @@
+namespace Inheritance
+{
+    class Program
+    {
+
+
+        static void Main(string[] args)
+        {
+            //Super class
+            Chef chef = new Chef();
+            chef.MakesZuke();
+            //Sub class
+            MexicanChef mexicanChef = new MexicanChef();
+            mexicanChef.MakesZuke();
+
+            Console.ReadLine();
+        }
+
+
+    }
+    
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Inheritance
+{
+    class Chef
+    {
+        public void MakeBeef()
+        {
+            Console.WriteLine("The Chef makes Beef");
+        }
+        public void MakesPasta()
+        {
+            Console.WriteLine("Chef makes pasta");
+        }
+        public  virtual void MakesZuke()
+        {
+            Console.WriteLine("Chef makes Zuke");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Inheritance
+{
+    internal class MexicanChef: Chef
+    {
+        public override void MakesZuke()
+        {
+            Console.WriteLine("The Mexican Chef makes Birria");
+        }
+        public void MakePasta()
+        {
+            Console.Write("The chef makes pasta");
+        }
+    }
+}
+
