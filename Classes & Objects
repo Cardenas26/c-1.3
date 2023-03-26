@@ -1,0 +1,32 @@
+//class
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Rhino
+{
+    class Book
+    {
+        public string title;
+        public string author;
+        public int pages;
+    }
+}
+
+
+//object
+using Rhino;
+{
+    Book book1= new Book();
+    book1.title = "The MexiCan";
+    book1.author = "Cesar Cardenas";
+    book1.pages = 500;
+
+    Console.WriteLine(book1.title);
+
+
+    
+    Console.ReadLine();
+}
