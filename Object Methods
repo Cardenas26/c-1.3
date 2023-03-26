@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Rhino
+{
+    class Student
+    {
+        public string name;
+        public string major;
+        public double gpa;
+
+        public Student(string aName, string aMajor, double aGpa)
+        {
+            name= aName;
+            major= aMajor;    
+            gpa= aGpa;  
+        }
+
+        public bool HasHonors()
+        {
+            if( gpa >=3.5)
+            {
+                return true;
+            }
+            return false;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+using Rhino;
+{
+    Student student1 = new Student("Cesar", "Computer Science", 4.0);
+    Student student2 = new Student("Mike", "Gender Studies", 2.0);
+
+
+
+    Console.WriteLine(student1.HasHonors());
+    Console.WriteLine(student2.HasHonors());
+
+
+
+
+    Console.ReadLine();
+}
