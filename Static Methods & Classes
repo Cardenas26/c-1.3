@@ -1,0 +1,28 @@
+namespace Inheritance
+{
+    internal class Class1
+    {
+        static void Main(string[] args)
+        {
+            UsefulTools.SayHi("Cesar");
+            Console.ReadLine();
+        }
+    }
+}
+
+namespace Inheritance
+{
+    internal class UsefulTools
+    {
+        public static void SayHi(String name)
+        {
+            Console.WriteLine("Hello " + name);
+        }
+    }
+}
+
+
+
+
+
+
